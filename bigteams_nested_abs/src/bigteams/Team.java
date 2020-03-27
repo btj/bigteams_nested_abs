@@ -26,7 +26,7 @@ public class Team {
 	 * 
 	 * @invar | getMembersInternal().stream().allMatch(s -> s.getTeamInternal() == this)
 	 * 
-	 * @post | result != null
+	 * @post | result != null && result.stream().allMatch(s -> s != null)
 	 * @peerObjects
 	 */
 	Set<ProjectCourseStudent> getMembersInternal() { return Set.copyOf(members); }
