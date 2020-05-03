@@ -58,7 +58,7 @@ public class ProjectCourseStudent {
 	/**
 	 * Make this student no longer be a member of their team.
 	 * 
-	 * @throws IllegalArgumentException if this student is not in a team.
+	 * @throws IllegalStateException if this student is not in a team.
 	 *    | getTeam() == null
 	 * 
      * @mutates_properties | this.getTeam(), this.getTeam().getMembers()
